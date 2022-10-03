@@ -85,20 +85,20 @@ main{
 .task-list h2{
     font-size: 1.5rem;
     font-weight: 300;
-    color: white;
+    color: var(--gray);
     margin-bottom: 1rem;
 }
 
-.task .task {
+#task .task {
     display: flex;
     justify-content: space-between;
-    background-color: gray;
+    background-color: var(--light);
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
 
-.task .task .content .text {
+#task .task .c0ntent .text {
     color: var(--light);
     font-size: 1.25rem;
     width: 100%;
@@ -106,11 +106,11 @@ main{
     transition: 0.4s;
 }
 
-.task .task .content .text:not(:read-only) {
+#task .task .content .text:not(:read-only) {
     color: var(--pink);
 }
 
-.tasks .task .actions {
+#tasks .task .actions {
 display: flex;
 margin: 0 --0.5rem;
 }
